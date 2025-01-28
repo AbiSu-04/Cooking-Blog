@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Recipe</title>
+</head>
+<body>
+    <h2>Suggest a Recipe</h2>
+    <form action="submit-recipe.php" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Your Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="recipe">Recipe Name:</label><br>
+        <input type="text" id="recipe" name="recipe" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+<script src="form-validation.js"></script>
+</body>
+</html>

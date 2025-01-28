@@ -1,0 +1,303 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    gap: 8px;
+}
+
+/* Layout Styling */
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    gap: 8px;
+}
+/* Article Styling */
+article {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+/* Image Styling with Transition */
+article img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Hover Effect on Image */
+article img:hover {
+    transform: scale(1.1); /* Slightly zoom the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a more pronounced shadow */
+}
+
+/* Header and Main Section */
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #adadad; /* Distinct color for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    background-image: url('bg2.jpg'); /* Replace with your desired image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ff6f61; /* Change text color on hover */
+    background-color: transparent; /* Ensure no background color appears */
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px; /* Space between the articles */
+}
+/* Gallery Section */
+#gallery {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#gallery h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1px;
+    text-align: center;
+}
+
+ li {
+    color: white;
+    text-decoration: none;
+    margin: 0 2px;
+    padding: 2px 2.5px;
+    display: inline-block;
+    border: 2px solid white; /* Add white border to each link */
+    border-radius: 4px; /* Optional: adds rounded corners to th*/
+}
+
+nav a:hover {
+    color: #ff6f61; /* Change text color on hover */
+    background-color: transparent; /* Ensure no background color appears */
+    
+}
+
+/* Forms Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff4e42;
+}
+/* Outer Border Styling */
+.outer-border {
+    border: 5px solid #041b67; /* Change the color and thickness as needed */
+    padding: 20px;         /* Add padding to ensure content does not touch the border */
+    margin: 10px auto;     /* Center the container and add margin */
+    max-width: 2000px;     /* Limit the maximum width of the page */
+    background-color: #fff; /* Optional: Set a background color for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    
+}
+
+/* body {
+    margin: 0; /* Remove default body margin */
+    /* border: 10px solid #6179ff; Define the border color and thickness
+    padding: 0; /* Optional: Adjust padding inside the border */
+    /* box-sizing: border-box; /* Ensure the border is included in the body's dimensions */
+    /* background-color: #f4f4f4; Optional: Set background color for the page */ */ */
+/* } */ 
+
+/* Backgrounds */
+body {
+    background-color: #f4f4f4;
+    background-image: url('background-pattern.png');
+    background-repeat: repeat;
+}
+
+/* Borders */
+section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Margins and Padding */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Box Model */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Outlines */
+a:focus, input:focus {
+    outline: none;
+}
+
+/* Text and Font */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #0a3d85;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Make the table take full width of the container */
+    border-collapse: collapse; /* Remove gaps between table borders */
+    margin: 20px 0; /* Add spacing above and below the table */
+    font-size: 16px; /* Adjust font size */
+}
+
+table th, table td {
+    border: 1px solid #ccc; /* Add a border around table cells */
+    padding: 10px; /* Add spacing inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+table th {
+    background-color: #041b67; /* Set header background color */
+    color: #fff; /* Set header text color */
+    font-weight: bold; /* Make header text bold */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color for better readability */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+
